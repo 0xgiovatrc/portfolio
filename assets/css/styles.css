@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Prompt", sans-serif;
+    background-image: linear-gradient(33deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 100%);
+    color: #FAF9F6;
+    background-size: 400%;
+    animation: bg-gradient 3s infinite alternate-reverse;
+}
+
+h1, h2{
+    /* border: 1px solid greenyellow; */
+    font-weight: 500;
+    font-size: 4.7svw;
+    line-height: 1.8em;
+}
+
+h2{
+    line-height: 1em;
+    font-size: 4.4svw;
+}
+
+a{
+    color: #FAF9F6;
+    text-decoration: none;
+}
+
+.header{
+    /* border: 1px solid aliceblue; */
+    background: rgb(18,18,18);
+    background: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(8,8,8,1) 70%, rgba(0,0,0,0) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-content{
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-inline-start: 70px;
+    padding-inline-end: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    transition: 0.3s ease-in-out;
+}
+
+.header-logo:hover{
+    background-image: linear-gradient(90deg, rgba(162,155,255,0.8) 0%, rgba(250,249,246,1) 25%, rgba(255,201,125,0.8) 50%, rgba(250,249,246,1) 75%, rgba(162,155,255,0.8) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    animation: text-gradient 2s infinite alternate;
+}
+
+.header-logo span{
+    font-size: 0.9em;
+}
+
+.header-menu li{
+    display: inline-block;
+    padding-inline: 15px;
+}
+
+.header-menu li a{
+    position: relative;
+}
+
+.header-menu li a::after{
+    content: "";
+    position: absolute;
+    background-color: #FAF9F6;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+}
+
+.header-menu li a:hover::after{
+    width: 100%;
+}
+
+.home{
+    /* border: 2px solid aqua; */
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text{
+    /* border: 2px solid yellow; */
+    animation: fade-in-up 0.5s;
+    width: 50svw;
+    margin-left: -5svh;
+    margin-right: -5svh;
+    padding-bottom: 3svh;
+}
+
+.home-text span{
+    background-image: linear-gradient(90deg, rgba(162,155,255,0.8) 0%, rgba(250,249,246,1) 25%, rgba(255,201,125,0.8) 50%, rgba(250,249,246,1) 75%, rgba(162,155,255,0.8) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    animation: text-gradient 2s infinite alternate;
+}
+
+.home-text h1 span{
+    animation-delay: -1.5s;
+    font-family: "Allura", sans-serif;
+    font-weight: 600;
+    font-size: 6.3svw;
+}
+
+.home-text h2 span:first-child{
+    animation-delay: -0.45s;
+}
+
+.home-text h2 span:last-child{
+    animation-delay: -0.9s;
+}
+
+.home-animation-container{
+    animation: fade-in-up 0.6s;
+}
+
+.home-animation{
+    /* border: 2px solid red; */
+    position: relative;
+    height: 22svw;
+    width: 22svw;
+}
+
+.home-animation img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-animation img:nth-child(1){
+    animation: MoveUpDown 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+.home-animation img:nth-child(2){
+    /* border: 1px solid yellow; */
+    animation: orbit 4s ease-in-out infinite;
+}
+
+.home-animation img:nth-child(3){
+    /* border: 1px solid yellow; */
+    animation: orbit 4s ease-in-out infinite;
+    animation-delay: -0.9s;
+}
+
+@media screen and (max-width: 1200px) {
+
+    h1, h2{
+        font-size: 10svw;
+    }
+    
+    h2{
+        font-size: 10svw;
+    }
+
+    .header-content{
+        padding-inline-start: 35px;
+        padding-inline-end: 35px;
+    }
+
+    .header-menu li{
+        padding-inline: 12px;
+    }
+
+    .home-text h1 span{
+        font-size: 14svw;
+    }
+    
+    .home{
+        /* border: 2px solid aqua; */
+        max-height: 100svh;
+        display: block;
+        text-align: center;
+    }
+
+    .home-text{
+        /* border: 2px solid yellow; */
+        animation: fade-in-up 0.5s;
+        width: 100svw;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0;
+        margin-top: 14svh;
+        margin-bottom: 7svh;
+    }
+
+    .home-animation{
+        height: 50svw;
+        width: 50svw;
+    }
+    
+    .home-animation img:nth-child(2){
+        display: none;
+    }
+    
+    .home-animation img:nth-child(3){
+        display: none;
+    }
+    
+}
