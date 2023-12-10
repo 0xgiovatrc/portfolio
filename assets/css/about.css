@@ -15,7 +15,6 @@
 }
 
 .about-profile, .about-strenghts, .about-hardSkills, .about-interests{
-    background-color: rgba(16,16,16,0.7);
     border-radius: 0.8em;
     border: 1px solid white;
     display: flex;
@@ -124,17 +123,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0em 0.5em 0.5em 1em;
         width: 100%;
         min-width: 0px;
         height: 22svh;
     }
 
     .about-profile, .about-strenghts, .about-hardSkills, .about-interests{
-        background-color: rgba(16,16,16,0.7);
         border-radius: 0.8em;
         border: none;
         border-bottom: 2px solid white;
+        padding-bottom: 6svw;
         margin-top: 5svh;
     }
 
@@ -142,14 +140,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1em 0.5em 2.5em 0.5em;
         width: 100%;
         min-width: 0px;
-        height: 10em;
+        height: 44svw;
     }
 
-    .ab-pro-title h1, .ab-str-title h1, .ab-hard-title h1, .ab-int-title H1{
-        font-size: 1.1em;
+    .ab-str-container{
+        width: 125%;
+        margin-left: -6svw;
+    }
+
+    .ab-pro-title h1, .ab-str-title h1, .ab-hard-title h1, .ab-int-title h1{
+        font-size: 4svw;
     }
 
 
@@ -158,22 +160,20 @@
     }
 
     .ab-pro-name-text h2, .ab-pro-loco-text h2, .ab-pro-profession-text h2{
-        font-size: 1.25em;
+        font-size: 4.5svw;
         padding-left: 0.5em;
     }
 
     .ab-str-troubleshoot-icon, .ab-str-curiosity-icon, .ab-str-creativity-icon,
     .ab-hard-html-icon, .ab-hard-css-icon,
     .ab-int-blockchain-icon, .ab-int-econ-icon{
-        font-size: 4em;
+        font-size: 16svw;
     }
 
     .ab-str-troubleshoot-text h2, .ab-str-curiosity-text h2, .ab-str-creativity-text h2,
     .ab-hard-html-text h2, .ab-hard-css-text h2,
     .ab-int-blockchain-text h2, .ab-int-econ-text h2{
-        font-size: 0.9em;
+        font-size: 4.4svw;
     }
-
-
 
 }
