@@ -104,28 +104,27 @@
 @media screen and (max-width: 550px){
 
     #about{
-        width: 100svw;
+        /* border: 2px solid greenyellow; */
+        width: 100%;
     }
 
     .about-profile{
         margin-top: 7svh;
-        width: 100%;
-        min-width: 0px;
-    }
-
-    .about-strenghts, .about-hardSkills, .about-interests{
-        margin-top: 0;
-        width: 100%;
-        min-width: 0px;
-    }
-
-    .about-profile{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
         min-width: 0px;
-        height: 22svh;
+        padding: 0 0 0 3.5svw;
+    }
+
+    .about-strenghts, .about-hardSkills, .about-interests{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        min-width: 0px;
+        padding: 0 0 4svw 3.5svw;
     }
 
     .about-profile, .about-strenghts, .about-hardSkills, .about-interests{
@@ -134,24 +133,12 @@
         border-bottom: 2px solid white;
         padding-bottom: 6svw;
         margin-top: 5svh;
-    }
-
-    .about-strenghts, .about-hardSkills, .about-interests{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        min-width: 0px;
-        height: 44svw;
-    }
-
-    .ab-str-container{
-        width: 125%;
-        margin-left: -6svw;
+        height: 100%;
     }
 
     .ab-pro-title h1, .ab-str-title h1, .ab-hard-title h1, .ab-int-title h1{
         font-size: 4svw;
+        margin-bottom: 2.5svw;
     }
 
 
@@ -160,8 +147,12 @@
     }
 
     .ab-pro-name-text h2, .ab-pro-loco-text h2, .ab-pro-profession-text h2{
-        font-size: 4.5svw;
+        font-size: 4.8svw;
         padding-left: 0.5em;
+    }
+
+    .ab-pro-profession-container{
+        margin-bottom: -2.5svw;
     }
 
     .ab-str-troubleshoot-icon, .ab-str-curiosity-icon, .ab-str-creativity-icon,
