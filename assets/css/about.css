@@ -143,12 +143,26 @@
 
 
     .ab-pro-name-icon, .ab-pro-loco-icon, .ab-pro-profession-icon{
-        font-size: 1.5em;
+        display: none;
     }
 
     .ab-pro-name-text h2, .ab-pro-loco-text h2, .ab-pro-profession-text h2{
         font-size: 4.8svw;
         padding-left: 0.5em;
+        padding: 1.5svw;
+        width: 100%;
+    }
+
+    .ab-pro-name-text h2::before{
+        content: "🙋‍♂️ ";
+    }
+    
+    .ab-pro-loco-text h2::before{
+        content: "📍 Based in ";
+    }
+
+    .ab-pro-profession-text h2::before{
+        content: "💻 ";
     }
 
     .ab-pro-profession-container{
