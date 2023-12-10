@@ -52,3 +52,15 @@
         transform: translateY(0px) scale(1);
     }
 }
+
+@keyframes swipe{
+    0% {
+    bottom: 0svh;
+    }
+    50% {
+    bottom: -2svh;
+    }
+    100% {
+    bottom: 0svh;
+    }
+}

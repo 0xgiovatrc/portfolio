@@ -1,6 +1,8 @@
 .home{
     /* border: 5px solid aqua; */
+    width: 90svw;
     height: 100svh;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +81,10 @@
     /* border: 1px solid yellow; */
     animation: orbit 4s ease-in-out infinite;
     animation-delay: -0.9s;
+}
+
+.home-swipe{
+    display: none;
 }
 
 
@@ -160,7 +166,7 @@
     
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 550px){
     
     .home{
         /* border: 2px solid aqua; */
@@ -170,7 +176,6 @@
         align-items: center;
         flex-direction: column;
         text-align: left;
-        padding-top: 35px;
     }
 
     .home-text{
@@ -208,6 +213,16 @@
 
     .home-animation-container{
         display: none;
+    }
+
+    .home-swipe{
+        /* border: 1px solid gray; */
+        display: block;
+        position: relative;
+        text-align: center;
+        width: 20svw;
+        height: 15svw;
+        animation: swipe 1.5s infinite;
     }
 
 }
