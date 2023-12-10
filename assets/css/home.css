@@ -153,10 +153,6 @@
 }
 
 @media screen and (max-width: 450px){
-
-    .home-text h1 span{
-        font-size: 14svw;
-    }
     
     .home{
         /* border: 2px solid aqua; */
@@ -177,6 +173,20 @@
         margin-right: 0;
     }
 
+    .home-text h1{
+        display: none;
+    }
+
+    .home-text h2{
+        font-size: 15svw;
+    }
+
+    .home-text h2 span{
+        display: block;
+        padding-bottom: 4.5svh;
+        font-size: 19svw;
+    }
+
     .home-animation-container{
         display: flex;
         justify-content: center;
@@ -184,9 +194,9 @@
     }
 
     .home-animation{
-        height: 60svw;
-        width: 60svw;
-    } 
+        height: 65svw;
+        width: 65svw;
+    }
     
     .home-animation img:nth-child(2){
         display: none;
@@ -195,5 +205,5 @@
     .home-animation img:nth-child(3){
         display: none;
     }
-    
+
 }
