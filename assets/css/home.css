@@ -31,12 +31,20 @@
     font-size: 6.3svw;
 }
 
+.home-text .mobile-only-home-text{
+    display: none;
+}
+
 .home-text h2 span:first-child{
     animation-delay: -0.45s;
 }
 
 .home-text h2 span:last-child{
     animation-delay: -0.9s;
+}
+
+.home-text .mobile-only-home-text span:first-child{
+    animation-delay: -0.2s;
 }
 
 .home-animation-container{
@@ -161,7 +169,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         padding-top: 35px;
     }
 
@@ -169,6 +177,7 @@
         /* border: 2px solid yellow; */
         animation: fade-in-up 0.5s;
         width: 100svw;
+        padding-left: 5svw;
         margin-left: 0;
         margin-right: 0;
     }
@@ -178,31 +187,26 @@
     }
 
     .home-text h2{
-        font-size: 15svw;
+        font-size: 14svw;
+        padding-block: 1.2svh;
+        line-height: 1.25em;
     }
 
     .home-text h2 span{
         display: block;
-        padding-bottom: 4.5svh;
         font-size: 19svw;
+        padding-bottom: 1.8svh;
+    }
+
+    .home-text h2 span:first-child{
+        padding-bottom: 3svh;
+    }
+
+    .home-text .mobile-only-home-text{
+        display: block;
     }
 
     .home-animation-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .home-animation{
-        height: 65svw;
-        width: 65svw;
-    }
-    
-    .home-animation img:nth-child(2){
-        display: none;
-    }
-    
-    .home-animation img:nth-child(3){
         display: none;
     }
 
