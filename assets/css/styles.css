@@ -9,7 +9,7 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
 }
 
 body{
@@ -52,8 +52,13 @@ em{
 
 @media screen and (max-width: 1024px){
 
+    html{
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+
     body{
-        height: none;
+        height: 100%;
     }
 
     .home{
