@@ -183,21 +183,21 @@
         display: flex;
         position: absolute;
         height: 0;
-        margin-top: 103svh;
+        margin-top: 100svh;
         overflow: hidden;
     }
 
     .mobile-only-menu li{
-        padding-top: 89svh;
+        padding-top: 89lvh;
         margin-inline: 3svw;
     }
 
     #check:checked~.header-menu{
-        height: 100svh;
+        height: 100lvh;
     }
 
     #check:checked~.mobile-only-menu{
-        height: 100svh;
+        height: 100lvh;
     }
     
 }
