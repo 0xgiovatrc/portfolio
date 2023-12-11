@@ -17,20 +17,15 @@
             <a class="header-logo" href="">
                 <span>&copy;</span> Giovanni Turchetto
             </a>
-            <input type="checkbox" id="check">
-            <label for="check" class="header-menu-icon">
-                <i class='bx bx-menu' id="hamburger-icon"></i>
-                <i class='bx bx-x' id="x-icon"></i>
-            </label>
             <ul class="header-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="about-anchor"><a href="#about">About</a></li>
+                <li class="projects-anchor"><a href="#projects">Projects</a></li>
+                <li class="contact-anchor"><a href="#contact">Contact</a></li>
             </ul>
-            <ul class="mobile-only-menu">
-                <li><a href="https://github.com/0xgiovatrc" target="_blank">GitHub</a></li>
-                <li><a href="https://www.instagram.com/0xgiovatrc" target="_blank">Instagram</a></li>
-            </ul>
+            <div class="header-icons">
+                <div class="header-icon-hamburger"><i class='bx bx-menu-alt-right'></i></div>
+                <!-- <div class="header-icon-x"><i class='bx bx-x'></i></div> -->
+            </div>
         </div>        
     </header>
 
@@ -107,6 +102,36 @@
         </div>
 
     </section>
+
+    <script>
+
+        let item = document.querySelector(".header-icon-hamburger");
+        item.addEventListener("click", function(){
+            document.querySelector(".header-menu").classList.toggle("menu-open");
+        });
+
+        let about = document.querySelector(".about-anchor");
+        about.addEventListener("click", function(){
+            if (screen.width < 550){
+                document.querySelector(".header-menu").classList.toggle("menu-open");
+            }
+        });
+
+        let projects = document.querySelector(".projects-anchor");
+        about.addEventListener("click", function(){
+            if (screen.width < 550){
+                document.querySelector(".header-menu").classList.toggle("menu-open");
+            }
+        });
+
+        let contact = document.querySelector(".contact-anchor");
+        about.addEventListener("click", function(){
+            if (screen.width < 550){
+                document.querySelector(".header-menu").classList.toggle("menu-open");
+            }
+        });
+
+    </script>
 
 </body>
 </html>

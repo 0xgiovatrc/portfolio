@@ -54,15 +54,6 @@
     display: none;
 }
 
-.header-menu-icon{
-    font-size: 2.5em;
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    right: 25px;
-    z-index: 9999;
-}
-
 .header-menu li{
     display: inline-block;
     padding-inline: 15px;
@@ -88,7 +79,7 @@
     width: 100%;
 }
 
-.mobile-only-menu{
+.header-icons{
     display: none;
 }
 
@@ -122,10 +113,21 @@
 
 @media screen and (max-width: 550px){
 
+    .header{
+        width: 100vw;
+    }
+
+    .header::before{
+        background: none;
+    }
+
     .header-content{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
+        height: 100dvh;
     }
 
     .header-logo{
@@ -133,71 +135,44 @@
         position: absolute;
         top: 22px;
         left: 5svw;
-        z-index: 9999;
+        z-index: 12;
     }
 
-    #check:checked~.header-menu-icon #hamburger-icon{
-        display: none;
-    }
-
-    #check:checked~.header-menu-icon #x-icon{
-        display: block;
-    }
-
-    .header-menu-icon{
-        font-size: 2.2em;
-        display: inline-flex;
-        top: 1.5svh;
-        right: 5svw;
-    }
-
-    .header-menu-icon #x-icon{
-        display: none;
+    .header-icons{
+        font-size: 12svw;
+        z-index: 10;
+        /* border: 2px solid red; */
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        top: 0;
+        padding-right: 2.5vw;
     }
 
     .header-menu{
-        /* border: 2px solid red; */
+        /* border: 5px solid red; */
         position: absolute;
         top: 0;
         padding-top: 20svw;
         left: 0;
         width: 100%;
-        height: 0;
+        height: 0%;
+        overflow: hidden;
         background: rgb(7,7,7);
         font-size: 15svw;
-        overflow: hidden;
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-open{
+        height: 100%;
     }
 
     .header-menu li{
-        /* border: 2px solid yellow; */
+        width: 85%;
         display: block;
-        padding-left: 5svw;
-    }
-
-    .mobile-only-menu{
-        /* border: 2px solid red; */
-        font-size: 4svw;
-        list-style-type: none;
-        display: flex;
-        position: absolute;
-        height: 0;
-        margin-top: 100dvh;
-        overflow: hidden;
-    }
-
-    .mobile-only-menu li{
-        padding-top: 90dvh;
-        margin-inline: 3svw;
-    }
-
-    #check:checked~.header-menu{
-        height: 100dvh;
-    }
-
-    #check:checked~.mobile-only-menu{
-        height: 100dvh;
+        z-index: 11;
     }
     
 }
