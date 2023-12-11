@@ -1,34 +1,57 @@
 #about{
-    /* border: 2px solid yellow; */
-    width: 95svw;
+    /* border: 1px solid yellow; */
+    width: 70em;
+    margin-top: 2em;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 2em;
+    justify-content: left;
+    position: relative;
+    height: 100svh;
 }
 
-.about-profile, .about-strenghts{
-    margin-top: 5svw;
-}
-
-.about-profile, .about-strenghts, .about-hardSkills, .about-interests{
+.about-profile{
+    border-right: 2px solid white;
     border-radius: 0.8em;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1em 2em 1.2em 2em;
-    width: 46%;
-    min-width: 650px;
-    height: 16em;
+    width: 55%;
 }
 
-.ab-pro-title h1, .ab-str-title h1, .ab-hard-title h1, .ab-int-title H1{
+.about-chars{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-left: 2.5em;
+}
+
+.about-strenghts, .about-hardSkills{
+    right: 0;
+    border-radius: 0.8em;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.ab-str-title h1, .ab-hard-title h1{
     font-size: 1.2em;
-    text-align: center;
+    text-align: left;
+}
+
+.ab-pro-bio-text p{
+    font-size: 1.2em;
+    font-weight: 200;
+    padding-top: 0.5em;
 }
 
 .ab-pro-name-container, .ab-pro-loco-container, .ab-pro-profession-container{
@@ -37,120 +60,124 @@
 }
 
 .ab-pro-name-icon, .ab-pro-loco-icon, .ab-pro-profession-icon{
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .ab-pro-name-text h2, .ab-pro-loco-text h2, .ab-pro-profession-text h2{
-    font-size: 2.4em;
+    font-size: 1.6em;
     padding-left: 0.8em;
-}
-
-.about-hardSkills, .about-interests{
-    margin-top: 2em;
+    background-image: linear-gradient(90deg, rgba(226,121,96,1) 0%, rgba(250,249,246,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: text-gradient 3s infinite alternate-reverse;
 }
 
 .ab-str-container,
-.ab-hard-container,
-.ab-int-container{
+.ab-hard-container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    gap: 1.5em;
 }
 
 .ab-str-troubleshoot-container, .ab-str-curiosity-container, .ab-str-creativity-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 33.3%;
+    justify-content: center;
 }
 
-.ab-hard-html-container, .ab-hard-css-container,
-.ab-int-blockchain-container, .ab-int-economics-container{
+.ab-hard-html-container, .ab-hard-css-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
 }
 
 .ab-str-troubleshoot-icon, .ab-str-curiosity-icon, .ab-str-creativity-icon,
-.ab-hard-html-icon, .ab-hard-css-icon,
-.ab-int-blockchain-icon, .ab-int-econ-icon{
+.ab-hard-html-icon, .ab-hard-css-icon{
     font-size: 5.8em;
+    text-align: center;
 }
 
 .ab-str-troubleshoot-text h2, .ab-str-curiosity-text h2, .ab-str-creativity-text h2,
-.ab-hard-html-text h2, .ab-hard-css-text h2,
-.ab-int-blockchain-text h2, .ab-int-econ-text h2{
-    font-size: 2em;
+.ab-hard-html-text h2, .ab-hard-css-text h2{
+    font-size: 1.5em;
+    background-image: linear-gradient(90deg, rgba(226,121,96,1) 0%, rgba(250,249,246,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: text-gradient 3s infinite alternate-reverse;
 }
 
-@media screen and (max-width: 1024px){    
-
-    .about-profile{
-        margin-top: 7svh;
-        width: 100%;
-        min-width: 0px;
-    }
-
-    .about-strenghts, .about-hardSkills, .about-interests{
-        margin-top: 3svh;
-        width: 100%;
-        min-width: 0px;
-    }
-
+.ab-pro-title{
+    display: none;
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 1024px){
 
     #about{
-        /* border: 2px solid greenyellow; */
-        width: 100%;
+        margin-top: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+        height: none;
+        gap: 2em;
+        width: 90%;
     }
 
     .about-profile{
-        margin-top: 7svh;
+        border-right: 2px solid white;
+        border-radius: 0.8em;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0 0 0 0;
+        padding-bottom: 1.2em;
         width: 100%;
-        min-width: 0px;
-        padding: 0 0 0 3.5svw;
+        margin-top: 21.5svw;
     }
 
-    .about-strenghts, .about-hardSkills, .about-interests{
+    .ab-pro-name-text h2, .ab-pro-loco-text h2, .ab-pro-profession-text h2{
+        color: white;
+        font-size: 5.5svw;
+        padding-top: 4svw;
+    }
+
+    .about-strenghts, .about-hardSkills{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
-        min-width: 0px;
-        padding: 0 0 4svw 3.5svw;
+        align-items: center;
+        padding-bottom: 1.2em;
     }
 
-    .about-profile, .about-strenghts, .about-hardSkills, .about-interests{
+    .about-profile, .about-strenghts, .about-hardSkills{
+        width: 100%;
         border-radius: 0.8em;
         border: none;
         border-bottom: 2px solid white;
-        padding-bottom: 6svw;
-        margin-top: 5svh;
-        height: 100%;
     }
 
-    .ab-pro-title h1, .ab-str-title h1, .ab-hard-title h1, .ab-int-title h1{
-        font-size: 4svw;
-        margin-bottom: 2.5svw;
+    .ab-pro-title h1, .ab-str-title h1, .ab-hard-title h1{
+        font-size: 5.5svw;
+        text-align: center;
     }
-
 
     .ab-pro-name-icon, .ab-pro-loco-icon, .ab-pro-profession-icon{
         display: none;
     }
 
-    .ab-pro-name-text h2, .ab-pro-loco-text h2, .ab-pro-profession-text h2{
-        font-size: 4.8svw;
-        padding-left: 0.5em;
-        padding: 1.5svw;
+    .ab-pro-name-text, .ab-pro-loco-text, .ab-pro-profession-text{
         width: 100%;
+    }
+
+    .about-chars{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .ab-pro-title{
+        display: block;
     }
 
     .ab-pro-name-text h2::before{
@@ -165,20 +192,23 @@
         content: "💻 ";
     }
 
-    .ab-pro-profession-container{
-        margin-bottom: -2.5svw;
-    }
-
     .ab-str-troubleshoot-icon, .ab-str-curiosity-icon, .ab-str-creativity-icon,
-    .ab-hard-html-icon, .ab-hard-css-icon,
-    .ab-int-blockchain-icon, .ab-int-econ-icon{
+    .ab-hard-html-icon, .ab-hard-css-icon{
         font-size: 16svw;
     }
 
     .ab-str-troubleshoot-text h2, .ab-str-curiosity-text h2, .ab-str-creativity-text h2,
-    .ab-hard-html-text h2, .ab-hard-css-text h2,
-    .ab-int-blockchain-text h2, .ab-int-econ-text h2{
+    .ab-hard-html-text h2, .ab-hard-css-text h2{
         font-size: 4.4svw;
+        color: white;
+    }
+
+    .ab-pro-bio-container{
+        display: none;
+    }
+
+    .about-chars{
+        width: 100%;
     }
 
 }
