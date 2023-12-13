@@ -9,14 +9,13 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-snap-type: none;
+    scroll-snap-type: y mandatory;
 }
 
 body{
     font-family: "Prompt", sans-serif;
     background-color: rgb(7,7,7);
     color: #FAF9F6;
-    height: 2000px;
 }
 
 section{

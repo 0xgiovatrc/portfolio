@@ -123,6 +123,7 @@
         height: none;
         gap: 2em;
         width: 90%;
+        padding-bottom: 10svh;
     }
 
     .about-profile{
@@ -199,16 +200,12 @@
 
     .ab-str-troubleshoot-text h2, .ab-str-curiosity-text h2, .ab-str-creativity-text h2,
     .ab-hard-html-text h2, .ab-hard-css-text h2{
-        font-size: 4.4svw;
+        font-size: 4.8svw;
         color: white;
     }
 
     .ab-pro-bio-container{
         display: none;
-    }
-
-    .about-chars{
-        width: 100%;
     }
 
 }

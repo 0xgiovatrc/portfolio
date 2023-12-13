@@ -1,0 +1,133 @@
+#projects{
+    /* border: 1px solid wheat; */
+    width: 70em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.projects-title{
+    text-align: left;
+    margin-top: 18svh;
+    margin-bottom: 4svh;
+}
+
+.projects-title h1{
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.proj{
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 1.5em;
+    display: flex;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.proj-title{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 56%;
+    transition: all 0.4s;
+}
+
+.proj-title h2{
+    font-size: 5.5em;
+    padding-left: 0.5em;
+    transition: all 0.3s;
+}
+
+.proj:hover > .proj-title h2{
+    padding-left: 1em;
+    background-image: linear-gradient(90deg, rgba(82,84,255,1) 0%, rgba(250,249,246,1) 25%, rgba(226,121,96,1) 50%, rgba(250,249,246,1) 75%, rgba(82,84,255,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: text-gradient 2s infinite alternate;
+}
+
+.proj-visualize{
+    width: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.proj-visualize p{
+    font-size: 1.2em;
+    width: 10em;
+}
+
+.proj-mockup img{
+    width: 44%;
+    scale: 0;
+    position: absolute;
+    right: 0;
+    bottom: -3em;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.proj:hover .proj-mockup img{
+    scale: 1;
+}
+
+.proj:hover > .proj-visualize{
+    scale: 0;
+}
+
+@media screen and (max-width: 1024px){
+
+    #projects{
+        flex-wrap: nowrap;
+        position: relative;
+        gap: 0.5em;
+        width: 90%;
+    }
+
+    .projects-title{
+        text-align: center;
+        margin-top: 11svh;
+        margin-bottom: 2svh;
+    }
+    
+    .proj{
+        display: flex;
+        flex-direction: column-reverse;
+        border-top: none;
+        margin-bottom: 3em;
+    }
+
+    .proj-title{
+        width: 100%;
+        padding-top: 0.5em;
+    }
+    
+    .proj-title h2{
+        font-size: 2.3em;
+        padding-left: 0.2em;
+    }
+
+    .proj-visualize{
+        display: none;
+    }
+
+    .proj-mockup img{
+        width: 100%;
+        scale: 1;
+        position: relative;
+        bottom: 0;
+    }
+
+    .proj:nth-child(4){
+        display: none;
+    }
+
+}

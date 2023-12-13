@@ -33,9 +33,9 @@
     font-size: 6.3svw;
 }
 
-.home-text .mobile-only-home-text{
+/* .home-text .mobile-only-home-text{
     display: none;
-}
+} */
 
 .home-text h2 span:first-child{
     animation-delay: -0.45s;
