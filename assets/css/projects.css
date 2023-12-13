@@ -95,7 +95,13 @@
     .projects-title{
         text-align: center;
         margin-top: 11svh;
-        margin-bottom: 2svh;
+    }
+
+    .projects-title h1{
+        margin-bottom: -5.5svw;
+        font-size: 5.5svw;
+        text-transform: uppercase;
+        font-weight: 500;
     }
     
     .proj{

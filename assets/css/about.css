@@ -43,6 +43,10 @@
     width: 100%;
 }
 
+.about-strenghts{
+    margin-bottom: -3svw;
+}
+
 .ab-str-title h1, .ab-hard-title h1{
     font-size: 1.2em;
     text-align: left;
