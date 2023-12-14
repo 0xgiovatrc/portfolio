@@ -1,0 +1,173 @@
+#contact-section{
+        /* border: 1px solid yellow; */
+        width: 55em;
+        margin-top: 2em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 100svh;
+}
+
+.contact-title{
+    margin-bottom: 2.2em;
+    background-image: linear-gradient(90deg, rgba(82,84,255,1) 0%, rgba(250,249,246,1) 25%, rgba(226,121,96,1) 50%, rgba(250,249,246,1) 75%, rgba(82,84,255,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    animation: text-gradient 2s infinite alternate;
+}
+
+.contact-form-container{
+    /* border: 1px solid wheat; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 3.5em;
+}
+
+.form-container{
+    font-size: 1.3em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.form-email{
+    width: 46%;
+}
+
+.form-message{
+    width: 100%;
+}
+
+.input, .input-message{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input label{
+    left: 0.3em;
+    color: white;
+    top: -1.7em;
+    position: absolute;
+}
+
+#firstname, #lastname, #email{
+    font-size: 1em;
+    font-family: "Prompt", sans-serif;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: rgba(255,255,255,0.05);
+    transition: 0.18s;
+}
+
+#message{
+    font-size: 1em;
+    font-family: "Prompt", sans-serif;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 7em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: rgba(255,255,255,0.05);
+    resize: none;
+    transition: 0.18s;
+}
+
+#firstname:hover, #lastname:hover, #email:hover, #message:hover{
+    background-color: black;
+}
+
+.form-button-container{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.form-button{
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0.05);
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: "Prompt", sans-serif;
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    transition: 0.18s;
+}
+
+.form-button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 550px){
+
+    #contact-section{
+        top: 4.7em;
+        width: 100svw;
+        justify-content: flex-start;
+    }
+
+    .contact-title{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .contact-title h1{
+        font-size: 5.5svw;
+    }
+
+    .contact-form-container{
+        row-gap: 2.6em;
+    }
+
+    .form-container{
+        margin: 0 auto;
+        width: 92%;
+        font-size: 1.1em;
+    }
+
+    .input label{
+        left: 0.3em;
+        color: white;
+        top: -1.6em;
+        position: absolute;
+    }    
+
+    .form-button-container{
+        margin: 0 auto;
+        margin-top: 1.5em;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .form-button{
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+
+}
