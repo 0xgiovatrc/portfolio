@@ -16,14 +16,15 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <a class="header-logo" href="/index.html">
+            <a class="header-logo" href="index.html">
                 <span>&copy;</span> Giovanni Turchetto
             </a>
             <nav class="navbar">
                 <ul class="header-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://github.com/0xgiovatrc" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
             <div class="header-icons">
@@ -31,7 +32,6 @@
             </div>
         </div>        
     </header>
-
     <section class="home">
         <div class="home-text">
             <h1>Hi, I am <span>Giovanni</span></h1>
@@ -47,7 +47,6 @@
         </div>
         <div class="home-swipe"><p>Scroll to<br>Know Me</p></div>
     </section>
-
     <section id="about">
         <div class="about-profile">
             <div class="ab-pro-title"><h1>PROFILE</h1></div>
@@ -87,7 +86,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="about-hardSkills">
                 <div class="ab-hard-title"><h1>PROGRAMMING LANGUAGES</h1></div>
                 <div class="ab-hard-container">
@@ -103,7 +101,6 @@
             </div>
         </div>
     </section>
-
     <section id="projects">
         <div class="projects-title"><h1>Discover My Projects</h1></div>
         <div class="proj">
@@ -122,9 +119,7 @@
             <div class="proj-mockup"><img src="assets/img/mockup-projects.png"></div>
         </div>
     </section>
-
     <script>
-
         let item = document.querySelector(".header-icon-hamburger");
         item.addEventListener("click", function(){
             document.querySelector(".header-menu").classList.toggle("menu-open");
@@ -136,8 +131,6 @@
                 document.querySelector(".header-menu").classList.toggle("menu-open");
             }
         });
-
     </script>
-
 </body>
 </html>

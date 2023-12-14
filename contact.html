@@ -16,14 +16,15 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <a class="header-logo" href="/index.html">
+            <a class="header-logo" href="index.html">
                 <span>&copy;</span> Giovanni Turchetto
             </a>
             <nav class="navbar">
                 <ul class="header-menu">
-                    <li><a href="/index.html#about">About</a></li>
-                    <li><a href="/index.html#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://github.com/0xgiovatrc" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
             <div class="header-icons">
@@ -31,9 +32,7 @@
             </div>
         </div>        
     </header>
-
     <section id="contact-section">
-
         <div class="contact-title"><h1>Work with me!</h1></div>
             <form action="">
                 <div class="contact-form-container">
@@ -66,7 +65,21 @@
                     <input type="submit" value="Send Request" class="form-button">
                 </div>
             </form>
-
     </section>
+    <script>
+
+        let item = document.querySelector(".header-icon-hamburger");
+        item.addEventListener("click", function(){
+            document.querySelector(".header-menu").classList.toggle("menu-open");
+        });
+
+        let anchor = document.querySelector(".header-menu");
+        anchor.addEventListener("click", function(){
+            if (screen.width < 550){
+                document.querySelector(".header-menu").classList.toggle("menu-open");
+            }
+        });
+
+    </script>
 </body>
 </html>
