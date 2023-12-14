@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Giovanni Turchetto &#8226; Freelance Web Developer</title>
+        <title>Giovanni Turchetto &#8226; Contact</title>
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/home.css">
@@ -12,8 +12,12 @@
         <link rel="stylesheet" href="assets/css/contact.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">(function(){emailjs.init("OgzDI4gUW0wc_O7iT");})();</script>
+        <script src="script.js"></script>
     </head>
 <body>
+    <video class="bg-vid" src="assets/vids/video-bg.mp4" autoplay muted loop></video>
     <header class="header">
         <div class="header-content">
             <a class="header-logo" href="index.html">
@@ -34,40 +38,40 @@
     </header>
     <section id="contact-section">
         <div class="contact-title"><h1>Work with me!</h1></div>
-            <form action="">
-                <div class="contact-form-container">
-                    <div class="form-container">
-                        <div class="input">
-                            <input type="text" name="First Name" id="firstname" required>
-                            <label for="first-name">First Name</label>
-                        </div>
-                    </div>
-                    <div class="form-container">
-                        <div class="input">
-                            <input type="text" name="Last Name" id="lastname" required>
-                            <label for="last-name">Last Name</label>
-                        </div>
-                    </div>
-                    <div class="form-container form-email">
-                        <div class="input">
-                            <input type="email" name="Email" id="email" required>
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="form-container form-message">
-                        <div class="input">
-                            <textarea name="Message" id="message" required></textarea>
-                            <label for="input-message">Message</label>
-                        </div>
+        <form id="formID">
+            <div class="contact-form-container">
+                <input type="hidden" name="contact_number">
+                <div class="form-container">
+                    <div class="input">
+                        <input type="text" name="First Name" id="firstname" required>
+                        <label for="first-name">First Name</label>
                     </div>
                 </div>
-                <div class="form-button-container">
-                    <input type="submit" value="Send Request" class="form-button">
+                <div class="form-container">
+                    <div class="input">
+                        <input type="text" name="Last Name" id="lastname" required>
+                        <label for="last-name">Last Name</label>
+                    </div>
+               </div>
+                <div class="form-container form-email">
+                    <div class="input">
+                        <input type="email" name="Email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
                 </div>
-            </form>
+                <div class="form-container form-message">
+                    <div class="input">
+                        <textarea name="Message" id="message" required></textarea>
+                        <label for="input-message">Message</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-button-container">
+                <button class="form-button" type="submit" onclick="sendEmail()">Send Message</button>
+             </div>
+        </form>
     </section>
     <script>
-
         let item = document.querySelector(".header-icon-hamburger");
         item.addEventListener("click", function(){
             document.querySelector(".header-menu").classList.toggle("menu-open");
@@ -79,7 +83,6 @@
                 document.querySelector(".header-menu").classList.toggle("menu-open");
             }
         });
-
     </script>
 </body>
 </html>

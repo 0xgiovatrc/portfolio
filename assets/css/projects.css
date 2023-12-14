@@ -83,7 +83,7 @@
     scale: 0;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1180px){
 
     #projects{
         flex-wrap: nowrap;
@@ -98,7 +98,7 @@
     }
 
     .projects-title h1{
-        margin-bottom: -5.5svw;
+        margin-bottom: 0;
         font-size: 5.5svw;
         text-transform: uppercase;
         font-weight: 500;

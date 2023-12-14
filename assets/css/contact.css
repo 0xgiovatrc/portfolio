@@ -99,6 +99,7 @@
     width: 100%;
     display: flex;
     justify-content: end;
+    margin-bottom: 2em;
 }
 
 .form-button{
@@ -119,7 +120,7 @@
 }
 
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 900px){
 
     #contact-section{
         top: 4.7em;
@@ -161,7 +162,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2em;
     }
 
     .form-button{

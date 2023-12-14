@@ -18,12 +18,22 @@ body{
     color: #FAF9F6;
 }
 
+.bg-vid{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.12;
+    z-index: 0;
+}
+
 section{
     scroll-snap-align: start;
 }
 
 h1, h2{
-    /* border: 1px solid greenyellow; */
     font-weight: 500;
     font-size: 4.7svw;
     line-height: 1.8em;
@@ -44,12 +54,30 @@ em{
 }
 
 @media screen and (min-width: 1800px){
-    .home, #about {
+
+    .home, #about, #projects, #contact-section {
         zoom: 105%;
       }
+
+}
+
+@media screen and (min-aspect-ratio: 1.3) and (min-width: 830px) and (max-width: 1370px){
+
+    .home, #contact-section{
+        zoom: 108%;
+    }
+    
+    #about{
+        zoom: 105%;
+    }
+
 }
 
 @media screen and (max-width: 1024px){
+
+    .bg-vid{
+        display: none;
+    }
 
     html{
         scroll-snap-type: none;
