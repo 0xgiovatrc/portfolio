@@ -127,7 +127,6 @@
         padding-bottom: 0px;
         padding-inline-start: 0px;
         padding-inline-end: 0px;
-        height: 100dvh;
     }
 
     .header-logo{
@@ -166,7 +165,7 @@
     }
 
     .menu-open{
-        height: 100%;
+        height: 100dvh;
     }
 
     .header-menu li{
